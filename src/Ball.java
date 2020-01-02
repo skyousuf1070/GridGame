@@ -2,9 +2,9 @@ public class Ball {
     private Position position;
 
     public Ball() {
-        int x_coOrdinate = (int) (Math.random() * 10) + 1;
-        int y_coOrdinate = (int) (Math.random() * 10) + 1;
-        position = new Position(x_coOrdinate, y_coOrdinate);
+        int xCoordinate = (int) (Math.random() * 10) + 1;
+        int yCoordinate = (int) (Math.random() * 10) + 1;
+        position = new Position(xCoordinate, yCoordinate);
     }
 
     public Position getPosition() {

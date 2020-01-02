@@ -4,6 +4,7 @@ public class GridGame {
         Player player = new Player("John");
         player.play(ball);
     }
+
     public static void main(String[] args) {
         new GridGame().launchGame();
     }

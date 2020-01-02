@@ -14,21 +14,21 @@ public class Player {
 
     public void moveRight() {
         System.out.println(name + " is moving Right");
-        position = new Position(position.getX_coOrdinate(), position.getY_coOrdinate() + 1);
-        System.out.println("Current Position: (" + position.getX_coOrdinate() + "," + position.getY_coOrdinate() + ")\n");
+        position = new Position(position.getXCoordinate(), position.getYCoordinate() + 1);
+        System.out.println("Current Position: (" + position.getXCoordinate() + "," + position.getYCoordinate() + ")\n");
     }
 
     public void moveUp() {
         System.out.println(name + " is moving Up");
-        position = new Position(position.getX_coOrdinate() + 1, position.getY_coOrdinate());
-        System.out.println("Current Position: (" + position.getX_coOrdinate() + "," + position.getY_coOrdinate() + ")\n");
+        position = new Position(position.getXCoordinate() + 1, position.getYCoordinate());
+        System.out.println("Current Position: (" + position.getXCoordinate() + "," + position.getYCoordinate() + ")\n");
     }
 
     public void play(Ball ball) {
-        System.out.println(name+" is starting from ("+position.getX_coOrdinate()+","+position.getY_coOrdinate()+")\n");
+        System.out.println(name + " is starting from (" + position.getXCoordinate() + "," + position.getYCoordinate() + ")\n");
         Position ballPosition = ball.getPosition();
-        int ballXCoordinate = ballPosition.getX_coOrdinate();
-        int ballYCoordinate = ballPosition.getY_coOrdinate();
+        int ballXCoordinate = ballPosition.getXCoordinate();
+        int ballYCoordinate = ballPosition.getYCoordinate();
         for (int xAxis = 0; xAxis < ballXCoordinate; xAxis++) {
             moveRight();
         }
