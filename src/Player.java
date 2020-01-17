@@ -2,11 +2,6 @@ public class Player {
     private String name;
     private Position position;
 
-    public Player() {
-        name = "Yousuf";
-        position = new Position(0, 0);
-    }
-
     public Player(String name) {
         this.name = name;
         position = new Position(0, 0);
